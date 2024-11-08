@@ -34,15 +34,11 @@ For this week's project, you will use GitHub Codespaces as your development envi
 1. Create a fork of the week's repository.
 1. When you have created a fork of the week's repository, start a codespace on the main branch. To ensure that you do not run out of system resource, choose the 4-core, 16GB RAM machine type (see image below)
 1. Run the command below in your codespace's terminal to create a single-node, Kubernetes cluster using Minikube: 
-  ```
-minikube start
-  ```
+    * `minikube start`
 1. Once your Minikube cluster is running, enter the command below to enable the Ingress add-on in your Minikube cluster:
 1. minikube addons enable ingress
 1. Create a namespace using the following command:
-  ```
-kubectl create namespace canary-demo
-  ```
+    * `kubectl create namespace canary-demo`
   This creates a namespace in your Kubernetes cluster named canary-demo. It is within this namespace that you'll do all the tasks required for this project.
 
 ### Project Code Structure
